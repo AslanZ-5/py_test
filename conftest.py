@@ -2,9 +2,11 @@ from os import lseek
 import pytest
 from django.contrib.auth.models import User
 from pytest_factoryboy import register
-from tests.factories import UserFactory
+from tests.factories import UserFactory, CategoryFactory, ProductFactory
 
 register(UserFactory) # access to this factory available by  "user_factory"
+register(CategoryFactory) # access to this factory available by  "category_factory"
+register(ProductFactory) # access to this factory available by  "product_factory"
 
 
 
